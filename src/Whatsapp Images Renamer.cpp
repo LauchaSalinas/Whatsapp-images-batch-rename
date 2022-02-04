@@ -4,12 +4,12 @@
 
 std::string changeFileName(const std::string& currentFileName, const std::string& extension)
 {
-    std::cout << "Nombre previo a la modificación: " << currentFileName << "\n";
+    std::cout << "Previous name: " << currentFileName << "\n";
 
     // ....other logics regarding current filename
 
     const std::string newFileName{ currentFileName + " (0)" + extension};
-    std::cout << "Nombre luego de la modificación: " << newFileName << "\n";
+    std::cout << "Final name: " << newFileName << "\n";
     return newFileName; // new file name
 }
 
@@ -17,7 +17,7 @@ int main()
 {
 
     std::string strpath;
-    std::cout << "Ingrese la ruta completa de la carpeta con imagenes de Whatsapp a renombrar: "<< std::endl;
+    std::cout << "Type the full address of the unzipped Whatsapp folder: "<< std::endl;
     std::cout << "C:\\Users\\user\\Downloads\\WhatsApp Unknown YEAR - MM - DD at HH.MM.SS HT" << std::endl;
     
     std::getline(std::cin, strpath);
@@ -48,6 +48,6 @@ int main()
 
     }
 
-    std::cout << std::endl << std::endl << "Presione una tecla para finalizar";
+    std::cout << std::endl << std::endl << "Type any key to close this window.";
     std::cin.get();
 }
